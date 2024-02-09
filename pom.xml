@@ -15,4 +15,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <finalName>calculator</finalName>
+  </build>
 </project>
