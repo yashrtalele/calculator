@@ -11,5 +11,5 @@ RUN mvn package
 FROM eclipse-temurin:17-jre-jammy
 ARG HOME_APP
 WORKDIR $HOME_APP
-COPY --from=maven_build $HOME_APP/target/calculator.jar
+COPY --from=maven_build $HOME_APP/target/calculator.jar .
 ENTRYPOINT ["java", "-jar", "calculator.jar"]
