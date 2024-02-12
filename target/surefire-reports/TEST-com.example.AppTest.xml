@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/yash/Developer/GitHub/calculator/target/surefire/surefirebooter-20240210005943479_3.jar /Users/yash/Developer/GitHub/calculator/target/surefire 2024-02-10T00-59-43_441-jvmRun1 surefire-20240210005943479_1tmp surefire_0-20240210005943479_2tmp"/>
+    <property name="sun.java.command" value="/Users/yash/Developer/GitHub/calculator/target/surefire/surefirebooter-20240212144509307_3.jar /Users/yash/Developer/GitHub/calculator/target/surefire 2024-02-12T14-45-09_258-jvmRun1 surefire-20240212144509307_1tmp surefire_0-20240212144509307_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/yash/Developer/GitHub/calculator/target/test-classes:/Users/yash/Developer/GitHub/calculator/target/classes:/Users/yash/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
@@ -29,14 +29,14 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/yash/Developer/GitHub/calculator/target/surefire/surefirebooter-20240210005943479_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/yash/Developer/GitHub/calculator/target/surefire/surefirebooter-20240212144509307_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.2"/>
     <property name="user.name" value="yash"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="14.3"/>
+    <property name="os.version" value="14.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -58,5 +58,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testApp" classname="com.example.AppTest" time="0.002"/>
+  <testcase name="testApp" classname="com.example.AppTest" time="0.001"/>
 </testsuite>
