@@ -12,6 +12,7 @@ public class App {
     int choice;
 
     do {
+      System.out.print("\n");
       System.out.println("Scientific Calculator Menu:");
       System.out.println("1. Square root (√x)");
       System.out.println("2. Factorial (x!)");
