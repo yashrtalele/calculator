@@ -2,7 +2,6 @@
 - name: Deploy or Update Kubernetes Deployment
   hosts: localhost
   gather_facts: false
-  become: true
 
   tasks:
     - name: Check if the deployment already exists
@@ -36,5 +35,4 @@
                   stdin: true
                   ports:
                   - containerPort: 80  # Update with your container port
-...
 
