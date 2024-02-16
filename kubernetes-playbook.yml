@@ -2,6 +2,10 @@
   hosts: localhost
 
   tasks:
+    - name: delete previous deployment
+      command: kubectl delete deployment calculator-app
+    - name: delete previous service
+      command: kubectl delete service calculator-service
     - name: deploy calculator on kubernetes
       command: kubectl apply -f calculator-app-deployment.yml
       args:
