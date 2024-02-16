@@ -1,0 +1,12 @@
+- name: kubernetes deployment
+  hosts: localhost
+
+  tasks:
+    - name: deploy calculator on kubernetes
+      command: kubectl apply -f calculator-app-deployment.yml
+      args:
+        chdir: /Users/yash/.jenkins/workspace/CICD
+    - name: create service
+      command: kubectl apply -f calculator-app-service.yml
+      args:
+        chdir: /Users/yash/.jenkins/workspace/CICD
