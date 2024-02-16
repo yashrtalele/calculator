@@ -3,7 +3,7 @@
 
   tasks:
     - name: Build Docker Image
-      command: docker build -t yashrtalele/calculator:latest .
+      command: docker build -t calculator.jar .
       args:
         chdir: /Users/yash/.jenkins/workspace/CICD
 
