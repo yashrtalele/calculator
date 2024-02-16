@@ -11,7 +11,7 @@
 
     - name: Deploy or update based on existence
       k8s:
-        state: "{{ 'present' if deployment_check.rc == 0 else 'latest' }}"
+        state: "{{ 'present' if deployment_check.rc == 0 else 'absent' }}"
         definition:
           apiVersion: apps/v1
           kind: Deployment
