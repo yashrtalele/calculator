@@ -1,6 +1,5 @@
 - name: docker build and push
-  hosts: localhost
-  become: yes
+  hosts: all
 
   tasks:
     - name: Build Docker Image
