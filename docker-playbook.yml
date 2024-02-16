@@ -18,6 +18,3 @@
 
     - name: Push image
       command: docker push yashrtalele/calculator:latest
-
-    - name: Run container
-      command: docker run -d --name calculator -p 8081:8080 yashrtalele/calculator:latest
