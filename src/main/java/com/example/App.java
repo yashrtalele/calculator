@@ -2,10 +2,6 @@ package com.example;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class App {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -25,16 +21,30 @@ public class App {
 
       switch (choice) {
         case 1:
-          squareRoot();
+          System.out.print("Enter a number (x) for square root: ");
+          double x = scanner.nextDouble();
+          double result = squareRoot(x);
+          System.out.println("Square root of " + x + " is: " + result);
           break;
         case 2:
-          factorial();
+          System.out.print("Enter a number (x) for factorial: ");
+          int y = scanner.nextInt();
+          long result1 = factorial(y);
+          System.out.println("Factorial of " + y + " is: " + result1);
           break;
         case 3:
-          naturalLogarithm();
+          System.out.print("Enter a number (x) for natural logarithm: ");
+          double a = scanner.nextDouble();
+          double result2 = naturalLogarithm(a);
+          System.out.println("Natural logarithm of " + a + " is: " + result2);
           break;
         case 4:
-          powerFunction();
+          System.out.print("Enter the base (x) for the power function: ");
+          double b = scanner.nextDouble();
+          System.out.print("Enter the exponent (b) for the power function: ");
+          double c = scanner.nextDouble();
+          double result3 = powerFunction(b, c);
+          System.out.println(b + " raised to the power " + c + " is: " + result3);
           break;
         case 5:
           System.out.println("Exiting the calculator. Goodbye!");
@@ -47,42 +57,25 @@ public class App {
     scanner.close();
   }
 
-  private static void squareRoot() {
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter a number (x) for square root: ");
-    double x = scanner.nextDouble();
-    double result = Math.sqrt(x);
-    System.out.println("Square root of " + x + " is: " + result);
+  public static double squareRoot(double x) {
+    return Math.sqrt(x);
   }
 
-  private static void factorial() {
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter a number (x) for factorial: ");
-    int x = scanner.nextInt();
+  public static long factorial(int x) {
     long result = 1;
-
     for (int i = 1; i <= x; i++) {
       result *= i;
     }
-
-    System.out.println("Factorial of " + x + " is: " + result);
+    return result;
   }
 
-  private static void naturalLogarithm() {
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter a number (x) for natural logarithm: ");
-    double x = scanner.nextDouble();
+  public static double naturalLogarithm(double x) {
     double result = Math.log(x);
-    System.out.println("Natural logarithm of " + x + " is: " + result);
+    return result;
   }
 
-  private static void powerFunction() {
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter the base (x) for the power function: ");
-    double x = scanner.nextDouble();
-    System.out.print("Enter the exponent (b) for the power function: ");
-    double b = scanner.nextDouble();
+  public static double powerFunction(double x, double b) {
     double result = Math.pow(x, b);
-    System.out.println(x + " raised to the power " + b + " is: " + result);
+    return result;
   }
 }
