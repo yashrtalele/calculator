@@ -14,7 +14,7 @@
       community.docker.docker_login:
         registry_url: https://index.docker.io/v1/
         username: yashrtalele
-        password: Y97^5Samaiyra*
+        password: *******
 
     - name: Push image
       command: docker push yashrtalele/calculator:latest
