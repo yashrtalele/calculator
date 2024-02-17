@@ -16,17 +16,17 @@ pipeline {
                     git branch: 'main', url: 'https://github.com/yashrtalele/calculator.git'
                 }
             }
+            stage('Run Tests') {
+              steps {
+                sh "mvn test"
+              }
+            }
             stage('Build Code') {
                 steps {
                     sh "mvn -Dmaven.test.failure.ignore=true clean package"
                 }
             }
-            stage('Run Tests') {
-                steps {
-                    sh "mvn test"
-                }
-            }
-           /* 
+                       /* 
             stage('Docker Build') {
                 steps {
                     sh "whereis docker"
