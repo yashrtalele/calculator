@@ -7,6 +7,7 @@ pipeline {
         git "Default"
     }
     environment {
+        PATH="/opt/homebrew/bin/:/usr/local/bin:$PATH"
         ANSIBLE_PASS = credentials('ANSIBLE_VAULT_PASSWORD')
     }
 
